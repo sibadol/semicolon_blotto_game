@@ -37,6 +37,7 @@ class _MyHomePageState extends State<MainPage> {
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width / 8,
                     child: TextField(
+                      textAlign: TextAlign.center,
                       controller: controllers[i],
                       keyboardType: TextInputType.number,
                       inputFormatters: [
@@ -94,7 +95,23 @@ class _MyHomePageState extends State<MainPage> {
                   12: [0, 10, 10, 10, 0],
                   13: [3, 7, 13, 5, 2],
                   14: [3, 7, 2, 8, 10],
-                  15: [0, 15, 7, 0, 8]
+                  15: [0, 15, 7, 0, 8],
+                  16: [10,10,10,0,0],
+                  17: [19, 1, 0, 10, 0],
+                  18: [7, 7, 8, 1, 7],
+                  19: [3, 4, 7, 6, 10],
+                  20: [14, 4, 4, 0 ,8],
+                  21: [7, 8, 5, 4, 6],
+                  22: [17, 3, 5, 1, 4],
+                  23: [2, 8, 10, 5, 5,],
+                  24: [9, 4, 7, 8, 2],
+                  25: [7, 7, 7, 7, 2],
+                  26: [9, 9, 9, 1, 2],
+                  27: [5, 8, 7, 1, 9],
+                  28: [5, 10, 10, 0 ,5],
+                  29: [1, 20, 3, 3, 3],
+                  30: [7, 2, 3, 8 ,10]
+
                 };
                 for (int i = 0; i < studentNumbers.length; i++) {
                   for(int j = 0; j < 5; j++) {
@@ -158,18 +175,21 @@ class ResultCard extends StatelessWidget {
     return Card(
       color: Color.fromARGB(255, 238, 235, 245),
       shadowColor: Colors.transparent,
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text('이번 라운드', style: TextStyle(fontSize: 30),),
-          Text('이긴 부원 수: $winCount', style: TextStyle(color: Colors.blue, fontSize: 25),),
-          Text('진 부원 수: $loseCount', style: TextStyle(color: Colors.red, fontSize: 25),),
-          Text('비긴 부원 수: $drawCount', style: TextStyle(color: Colors.black, fontSize: 25),),
-          Text('총 점수', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
-          Text('$score', style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),),
-        ],
+      child: SizedBox(
+        height: MediaQuery.of(context).size.height * 0.7,
+        width: MediaQuery.of(context).size.width * 0.7,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('이번 라운드', style: TextStyle(fontSize: 30),),
+            Text('이긴 부원 수: $winCount', style: TextStyle(color: Colors.blue, fontSize: 25),),
+            Text('진 부원 수: $loseCount', style: TextStyle(color: Colors.red, fontSize: 25),),
+            Text('비긴 부원 수: $drawCount', style: TextStyle(color: Colors.black, fontSize: 25),),
+            Text('총 점수', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+            Text('$score', style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),),
+          ],
+        ),
       ),
     );
   }
