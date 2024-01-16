@@ -1,16 +1,8 @@
-# game_project
+# 보정고 동아리 "세미콜론" 동아리 발표회용 블로토 대령 게임
 
-"A new Flutter project."
+"동아리 발표회를 위해 제작된 블로토 대령 게임."
 
-## Getting Started
+## 블로토 대령게임 하는법
 
-This project is a starting point for a Flutter application.
+(https://namu.wiki/w/%EB%B8%94%EB%A1%9C%ED%86%A0%20%EB%8C%80%EB%A0%B9%20%EA%B2%8C%EC%9E%84)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
